@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Accounts View</title>
+</head>
+<script type="text/javascript" src="js/accountDB.js"></script>
+<script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+<body>
+	<h2>Account DB</h2>
+
+	<table border="1">
+		<thead>
+			<tr>
+				<th>Account Name</th>
+				<th>Username</th>
+				<th>Password</th>
+			</tr>
+		</thead>
+		<tbody id="tableBody">
+			<tr>
+				<td>HDFC</td>
+				<td>abc0123</td>
+				<td>hdfc123</td>
+				<td><button>Edit</button></td>
+				<td><button>Delete</button></td>
+			</tr>
+			<tr>
+				<td>Yahoo</td>
+				<td>xyz@yahoo.com</td>
+				<td>yahoo123</td>
+				<td><button>Edit</button></td>
+				<td><button>Delete</button></td>
+			</tr>
+			<tr>
+				<td>SBI</td>
+				<td>7869823</td>
+				<td>sbi123</td>
+				<td><button>Edit</button></td>
+				<td><button>Delete</button></td>
+			</tr>
+		</tbody>
+	</table>
+	<br>
+	<br>
+	<button id="addAccount">Add New Account</button>
+	<div id="addNewAccount">
+		<h2>New Account</h2>
+		Account Name<input type="text" id="accountName"> <br>
+		Username <input type="text" id="username"> <br> Password<input
+			type="password" id="password"> <br>
+		<button id="btnAdd">Add to DB</button>
+
+	</div>
+</body>
+</html>
